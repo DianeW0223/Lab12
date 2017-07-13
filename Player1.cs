@@ -8,48 +8,16 @@ namespace RockPaperScissors
 {
     class Player1 : Players
     {
-        private string name;
-        private string input;
-        private string thro;
-       
         
-
-        public override string getPlayerName()
+        //here we are asking to run the method from the parent to request the name and run the application.        
+        public Player1()
         {
-            Console.WriteLine("Please enter your name Player 1");
-            name = Console.ReadLine();
-            return name;
-        }
-        public string getPlayerChoice()
-        {
-            Console.WriteLine("Hi " + name + "! Would you like to play against Player 2 or Player 3? Enter 2 or 3.");
-            input = Console.ReadLine();
-            Console.WriteLine("Great " + name + "!");
-            return input;
-        }
-
-        public string Roshambo()
-        {
-            Console.WriteLine("Please choose Rock, Paper or Scissors");
-            thro = Console.ReadLine();
-            thro = thro.ToLower();
-            return thro;
-        }
-
-        public string getInput()
-        {
-            return input;
-        }
-
-        public string getName()
-        {
-            return name;
-        }
-
-        public string getRoshambo()
-        {
-            return thro;
-        }
+            setName();
+            runApp();
+            
+        }      
+                
+        
         
     }
 }

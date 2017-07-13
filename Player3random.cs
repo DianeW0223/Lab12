@@ -10,9 +10,10 @@ namespace RockPaperScissors
     {
         private int randomThrow;
         private string r;
-        public int getRandom(int x)
+        Random rdm = new Random();
+
+        public int getRandom()
         {
-            Random rdm = new Random();
             randomThrow = rdm.Next(1, 3);
             return randomThrow;
         }
@@ -21,15 +22,15 @@ namespace RockPaperScissors
            
             if (randomThrow == 1)
             {
-                return r = "Rock";
+                return r = "rock";
             }
             else if (randomThrow == 2)
             {
-                r = "Paper";
+                r = "paper";
             }
             else if (randomThrow == 3)
             {
-                r = "Scissors";
+                r = "scissors";
             }
             return r;
         }

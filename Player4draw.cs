@@ -9,13 +9,12 @@ namespace RockPaperScissors
     class Player4draw : Players
     {
         private string player4;
-        
+        //this method always returns a draw for player 4
         public void Draw()
         {
             Player1 P1 = new Player1();
             player4 = P1.getRoshambo();
-            string p1Name = P1.getName();
-            Console.WriteLine(p1Name + ":" + player4 + "\nPlayer 4:"+player4);
+            Console.WriteLine(getName() + ":" + player4 + "\nPlayer 4:"+player4);
             
         }
     }
